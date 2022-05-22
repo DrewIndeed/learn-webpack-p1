@@ -1,0 +1,4 @@
+- At this commit, Webpack still using the default config
+meaning ưhen you build, it will look for the index.js file, 
+if you name it something else, errors
+-> You need to customize webpack config
