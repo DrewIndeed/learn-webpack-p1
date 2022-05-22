@@ -2,3 +2,6 @@
 meaning ưhen you build, it will look for the index.js file, 
 if you name it something else, errors
 -> You need to customize webpack config
+
+- entry: the entry point to your app
+- output: the file that we wnat to compile our js to
