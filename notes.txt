@@ -5,3 +5,6 @@ if you name it something else, errors
 
 - entry: the entry point to your app
 - output: the file that we wnat to compile our js to
+
+- At this stage, you need to npm run build every time you make a change
+-> We need a DEV SERVER: watch and serve my files, to do that auto

@@ -4,10 +4,12 @@ const BundleAnalyzerPlugin =
 
 module.exports = {
   entry: './src/index.js', // can be an {}, with multiple entreis
+
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+
   module: {
     rules: [
       {
@@ -16,5 +18,14 @@ module.exports = {
       },
     ],
   },
+
   plugins: [new BundleAnalyzerPlugin()],
+
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 9000,
+  },
 };
